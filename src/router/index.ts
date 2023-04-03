@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ResourcesView from '../views/ResourcesView.vue'
-import ResourceView from '../views/ResourceView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,12 +22,12 @@ const router = createRouter({
     {
       path: '/resources',
       name: 'resources',
-      component: ResourcesView
+      component: () => import('../views/ResourcesView.vue')
     },
     {
       path: '/resources/:slug',
       name: 'resource',
-      component: ResourceView
+      component: () => import('../views/ResourceView.vue')
     },
     {
       path: '/model-utilization',
