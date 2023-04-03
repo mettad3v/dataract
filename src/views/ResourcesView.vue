@@ -5,7 +5,7 @@
         <div class="grid md:grid-cols-3 gap-9 mt-12">
             <div v-for="p in posts" :key="p.slug" class="flex flex-col max-h-[28rem] overflow-hidden">
                 <router-link :to="{ name: 'resource', params: { slug: p.slug } }">
-                    <img class="max-h-60 w-full" v-if="p.featured_image" :src="p.featured_image" alt="">
+                    <img class="max-h-60 w-full rounded-lg" v-if="p.featured_image" :src="p.featured_image" alt="">
 
                     <img v-else src="http://via.placeholder.com/250x250" alt="">
 
