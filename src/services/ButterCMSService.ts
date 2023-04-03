@@ -1,2 +1,2 @@
 import Butter from "buttercms";
-export const butterService = Butter('be66a8821d3ee0d8d370176b0c36d591824d35bf');
+export const butterService = Butter(import.meta.env.VITE_APP_BUTTERCMS_API_KEY);
