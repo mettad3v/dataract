@@ -1,4 +1,4 @@
-import type TelcoData from "./types/TelcoData"
+import type { TelcoData } from "./types/TelcoData"
 
 export const mtn: TelcoData = {
   "cellName": [

@@ -1,5 +1,5 @@
 <template>
-  <main class="md:mx-[5.4rem] pt-20 md:pt-[135px]">
+  <section class="md:mx-[5.4rem] mt-10 md:mt-20">
     <div class="md:mx-[10rem]">
       <h1 class="text-lg leading-9 ">Team</h1>
       <p class="mt-4 text-[14px] font-['Soleil'] md:text-lg leading-5 md:leading-7 text-[#828282]">Just we exploring the
@@ -18,7 +18,7 @@
           <p class="mt-5 font-['Soleil'] text-lg leading-5">Eze Ethelbert</p>
           <p class="text-[#BDBDBD] font-['Soleil'] ">Data Engineer</p>
           <p>
-            <a href="">
+            <a target="_blank" href="https://www.linkedin.com/in/eze-ethelbert-67418445/">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.5" y="0.5" width="27" height="27" fill="url(#pattern0)" />
@@ -39,7 +39,7 @@
           <p class="mt-5 font-['Soleil'] text-lg leading-5">Okonkwo Emmanuel</p>
           <p class="text-[#BDBDBD] font-['Soleil'] ">Frontend Developer</p>
           <p>
-            <a href="">
+            <a target="_blank" href="https://linkedin.com/in/emmanuelokonkwo">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect x="0.5" y="0.5" width="27" height="27" fill="url(#pattern0)" />
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <style></style>

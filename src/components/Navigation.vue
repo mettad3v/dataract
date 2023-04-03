@@ -20,10 +20,11 @@ const toggleNav = () => {
             </svg>
 
         </div>
-        <div class="w-full text-center md:w-0 md:text-left">
+        <div class=" text-center md:text-left ">
             <h1 class="text-[1.375rem] md:text-base leading-8 ">
 
-                <router-link to="/">NCC</router-link>
+                <router-link to="/"><img class="md:w-24 md:h-24 h-20 w-20"
+                        src="@/assets/images/logo-transparent.png" /></router-link>
             </h1>
         </div>
         <div class="block md:hidden " @click="toggleNav">
@@ -57,19 +58,22 @@ const toggleNav = () => {
 
         </div>
 
-        <div class="hidden md:block">
+        <div class="hidden  md:block">
             <ul class="list-reset flex items-center ">
+                <li class="mx-7 text-sm text-[#BDBDBD]">
+                    <router-link to="/">Home</router-link>
+                </li>
                 <li class="mx-7 text-sm text-[#BDBDBD]">
                     <router-link to="/model-utilization">Model Utilization</router-link>
                 </li>
                 <li class="mx-7 text-sm text-[#BDBDBD]">
-                    <router-link to="/">Upload Article</router-link>
+                    <router-link to="/upload-article">Upload Article</router-link>
                 </li>
                 <li class="mx-7 text-sm text-[#BDBDBD]">
                     <router-link to="/about">About Us</router-link>
                 </li>
                 <li class="mx-7 text-sm text-[#BDBDBD]">
-                    <router-link to="/">Resources</router-link>
+                    <router-link to="/resources">Resources</router-link>
                 </li>
                 <li class="mx-3">
                     <button class="rounded btn-primary px-5 py-3 w-40 font-['Soleil'] text-sm text-white">Train ML</button>
@@ -84,13 +88,13 @@ const toggleNav = () => {
                 <router-link class="leading-[18px]" to="/model-utilization">Model Utilization</router-link>
             </li>
             <li class="my-4 text-sm  text-[#BDBDBD]">
-                <router-link class="leading-[18px]" to="/">Upload Article</router-link>
+                <router-link class="leading-[18px]" to="/upload-article">Upload Article</router-link>
             </li>
             <li class="my-4 text-sm  text-[#BDBDBD]">
                 <router-link class="leading-[18px]" to="/about">About Us</router-link>
             </li>
             <li class="my-4 text-sm  text-[#BDBDBD]">
-                <router-link class="leading-[18px]" to="/">Resources</router-link>
+                <router-link class="leading-[18px]" to="/resources">Resources</router-link>
             </li>
             <li class="my-4">
                 <button class="rounded btn-primary font-bold px-5 py-3 w-40 font-['Soleil'] text-sm text-white">Train
