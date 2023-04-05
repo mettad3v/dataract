@@ -34,8 +34,8 @@
 
 <script setup lang="ts">
 import { butterService } from "@/services/ButterCMSService"
-import { onMounted, ref, computed } from 'vue'
-import type { AxiosResponse } from "axios";
+import { onMounted, ref } from 'vue'
+
 
 const posts: any = ref([])
 
