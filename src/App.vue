@@ -18,34 +18,25 @@ provide('hasError', hasError);
 <template>
   <Error v-if="hasError" />
   <Loading v-if="isLoading" />
-  <Suspense>
-    <template #default>
-      <main>
-        <div class="mx-6 md:mx-[5.4rem]">
-          <header class="mt-[0.3rem]">
-            <Navigation />
-          </header>
-        </div>
 
-        <div class="mx-6 md:mx-[5.4rem]">
-          <RouterView v-slot="{ Component }">
-            <Transition name="fade">
-              <component :is="Component" />
-            </Transition>
-          </RouterView>
-        </div>
-        <div class="mt-10">
-          <Footer />
-        </div>
-      </main>
-    </template>
+  <main>
+    <div class="mx-6 md:mx-[5.4rem]">
+      <header class="mt-[0.3rem]">
+        <Navigation />
+      </header>
+    </div>
 
-    <template #fallback>
-      <main>
-        <Loading />
-      </main>
-    </template>
-  </Suspense>
+    <div class="mx-6 md:mx-[5.4rem]">
+      <RouterView v-slot="{ Component }">
+        <Transition name="fade">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
+    </div>
+    <div class="mt-10">
+      <Footer />
+    </div>
+  </main>
 </template>
 
 <style>
