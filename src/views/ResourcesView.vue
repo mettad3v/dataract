@@ -3,6 +3,7 @@
         <h1 class="font-medium text-2xl leading-9">Featured Articles</h1>
 
         <div class="grid md:grid-cols-3 gap-9 mt-12">
+            <button @click="getPosts">get postss</button>
             <div v-for="p in posts" :key="p.slug" class="flex flex-col max-h-[28rem] overflow-hidden">
                 <router-link :to="{ name: 'resource', params: { slug: p.slug } }">
                     <img class="max-h-60 w-full rounded-lg" v-if="p.featured_image" :src="p.featured_image" alt="">
@@ -37,6 +38,12 @@ import { butterService } from "@/services/ButterCMSService"
 import { onMounted, ref } from 'vue'
 
 console.dir(butterService);
+
+const getPosts = async () => {
+    const response = await butterService.post.list();
+    console.log(response);
+
+}
 
 const posts: any = ref([])
 
