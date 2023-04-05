@@ -4,7 +4,7 @@
 
         <div class="grid md:grid-cols-3 gap-9 mt-12">
             <button @click="getPosts">get postss</button>
-            <!-- <div v-for="p in posts" :key="p.slug" class="flex flex-col max-h-[28rem] overflow-hidden">
+            <div v-for="p in posts" :key="p.slug" class="flex flex-col max-h-[28rem] overflow-hidden">
                 <router-link :to="{ name: 'resource', params: { slug: p.slug } }">
                     <img class="max-h-60 w-full rounded-lg" v-if="p.featured_image" :src="p.featured_image" alt="">
 
@@ -26,14 +26,14 @@
                             '...' : p.summary }}</p>
                     </div>
                 </router-link>
-            </div> -->
+            </div>
 
 
         </div>
     </section>
 </template>
 
-<script setup >
+<script setup lang="ts">
 import { butterService } from "@/services/ButterCMSService"
 import { onMounted, ref } from 'vue'
 
@@ -51,35 +51,35 @@ const getPosts = () => {
 
 }
 
-// const posts: any = ref([])
+const posts: any = ref([])
 
-// const formattedDate = (isoDate: string) => {
-//     const dateObj = new Date(isoDate);
+const formattedDate = (isoDate: string) => {
+    const dateObj = new Date(isoDate);
 
-//     const options: any = {
-//         month: "long",
-//         day: "numeric",
-//         year: "numeric"
-//     };
+    const options: any = {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+    };
 
-//     const formattedDate = dateObj.toLocaleDateString("en-US", options)
-//         .replace(/(\d+)(st|nd|rd|th)/, "$1$2,"); // add commas after the day suffix
+    const formattedDate = dateObj.toLocaleDateString("en-US", options)
+        .replace(/(\d+)(st|nd|rd|th)/, "$1$2,"); // add commas after the day suffix
 
-//     return formattedDate
-// }
+    return formattedDate
+}
 
-// onMounted(async () => {
-//     const response: any = (
-//         await butterService.post.list({
-//             page: 1,
-//             page_size: 10,
-//         })
-//     ).data
-//     console.log(response);
+onMounted(async () => {
+    const response: any = (
+        await butterService.post.list({
+            page: 1,
+            page_size: 10,
+        })
+    ).data
+    console.log(response);
 
-//     posts.value = response.data
+    posts.value = response.data
 
-// })
+})
 </script>
 
 <style>
