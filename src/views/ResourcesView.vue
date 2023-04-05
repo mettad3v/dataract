@@ -36,7 +36,7 @@
 import { butterService } from "@/services/ButterCMSService"
 import { onMounted, ref } from 'vue'
 
-console.log('here' + butterService);
+console.dir(butterService);
 
 const posts: any = ref([])
 
