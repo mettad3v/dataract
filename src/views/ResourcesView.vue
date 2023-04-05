@@ -39,9 +39,15 @@ import { onMounted, ref } from 'vue'
 
 console.dir(butterService);
 
-const getPosts = async () => {
-    const response = await butterService.post.list();
-    console.log(response);
+const getPosts = () => {
+    const response = butterService.post.list().then((r: any) => {
+        console.log(r);
+
+    }).catch((e: any) => {
+        console.log(e);
+
+    })
+
 
 }
 
