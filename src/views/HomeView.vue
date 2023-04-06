@@ -9,8 +9,8 @@
     </div>
     <div class="z-10 pt-16 md:pt-[9.31rem] w-full md:w-[60%] ">
       <h1 class="text-[#4F4F4F] leading-8 md:leading-[4.18rem] font-normal text-xl  md:text-5xl">Machine Learning based
-        channel
-        utilization
+        <span class="text-[#2297EB]">channel
+          utilization</span>
         system
       </h1>
       <h3 class="mt-6 leading-8 text-[#828282] font-['Soleil'] font-normal text-xl">A machine learning framework
@@ -21,8 +21,11 @@
       </h3>
 
       <div class="flex md:flex-row flex-col mt-8 md:mt-[0.219rem] w-full font-['Soleil']">
-        <button class="btn-primary w-full md:w-[13.6rem] md:h-12 h-14 text-white  p-3 rounded-sm text-base font-bold">Get
-          Started</button>
+        <router-link to="/model-utilization">
+          <button
+            class="btn-primary w-full md:w-[13.6rem] md:h-12 h-14 text-white  p-3 rounded-sm text-base font-bold">Get
+            Started</button>
+        </router-link>
         <button class="ml-0 md:ml-4 md:mt-0 mt-2 flex justify-center items-center">
           <svg class="w-8 h-8 md:h-12 md:w-12" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="26.25" cy="26" r="25.5" fill="url(#paint0_linear_221_192)" />
