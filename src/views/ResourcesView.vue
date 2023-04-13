@@ -1,6 +1,6 @@
 <template>
     <section class="md:mt-20 mt-10">
-        <h1 class="font-medium text-2xl leading-9">Featured Articles</h1>
+        <h1 class="font-medium text-2xl leading-9">Featured Article</h1>
 
         <div class="grid md:grid-cols-3 gap-9 mt-12">
             <!-- <button @click="getPosts">get postss</button> -->
