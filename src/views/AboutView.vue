@@ -13,8 +13,7 @@
 
       <div class="mt-10 flex flex-col md:flex-row md:gap-20 md:items-start">
         <div>
-          <img class="md:h-[10.3rem] h-[341px] w-full md:w-[10.3rem]" src="@/assets/images/unsplash_iEEBWgY_6lA.png"
-            alt="">
+          <img class="md:h-[10.3rem] rounded-lg h-[341px] w-full md:w-[10.3rem]" src="@/assets/images/eze.jpeg" alt="">
           <p class="mt-5 font-['Soleil'] text-lg leading-5">Eze Ethelbert</p>
           <p class="text-[#BDBDBD] font-['Soleil'] ">Data Engineer</p>
           <p>

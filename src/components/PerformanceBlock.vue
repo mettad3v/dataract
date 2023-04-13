@@ -40,7 +40,7 @@
 
             <div class="text-center mt-20">
 
-                The policy is the telco with higher confidence can lend more comfortably
+                The policy is the telco with higher recall can lend more comfortably
             </div>
 
         </div>
@@ -61,25 +61,7 @@ const props = defineProps({
         required: false
     }
 })
-// const predict: any = ref(props.predictionResults)
 
-// // const maxConfidence = computed(() => {
-// //     //    if (predictionResults.value) {
-// //     return Math.max(...predict.value.map((p: { confidence: any; }) => p.confidence))
-// //     //    }
-// // })
-
-// watchEffect(() => {
-
-//     if (props.predictionResults) {
-//         const maxConfidence = computed(() => {
-
-//             return Math.max(...predict.value.map((p: { confidence: any; }) => p.confidence))
-//         })
-
-//     }
-
-// })
 
 const emit = defineEmits<{
     (e: 'modalStateChange'): void,

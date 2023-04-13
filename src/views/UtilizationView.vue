@@ -62,18 +62,18 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 p-3">
                         <select v-model="formData.mtn.ServingCellIdentity" class="bg-[#F1F6FD] h-12 p-3 rounded"
                             name="ServingCellId" id="">
-                            <option disabled selected value="">Serving Cell Identity</option>
+                            <option disabled selected value="">serving cell identity</option>
                             <option v-for="(item, index) in mtnData.servingCellIdentity" :key="index" :value="item">
                                 {{ item }}
                             </option>
                         </select>
                         <select v-model="formData.mtn.CellName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="cellname" id="">
-                            <option disabled selected value="">Cell Name</option>
+                            <option disabled selected value="">cell name</option>
                             <option v-for="(item, index) in mtnData.cellName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
                         <select v-model="formData.mtn.SiteName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="sitename" id="">
-                            <option disabled selected value="">Site Name</option>
+                            <option disabled selected value="">site name</option>
                             <option v-for="(item, index) in mtnData.siteName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
@@ -97,20 +97,20 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 p-3">
                         <select v-model="formData.airtel.ServingCellIdentity" class="bg-[#F1F6FD] h-12 p-3 rounded"
                             name="ServingCellId" id="">
-                            <option disabled selected value="">Serving Cell Identity</option>
+                            <option disabled selected value="">serving cell identity</option>
                             <option v-for="(item, index) in airtelData.servingCellIdentity" :key="index" :value="item">{{
                                 item
                             }}</option>
                         </select>
                         <select v-model="formData.airtel.CellName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="cellname"
                             id="">
-                            <option disabled selected value="">Cell Name</option>
+                            <option disabled selected value="">cell name</option>
                             <option v-for="(item, index) in airtelData.cellName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
                         <select v-model="formData.airtel.SiteName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="sitename"
                             id="">
-                            <option disabled selected value="">Site Name</option>
+                            <option disabled selected value="">site name</option>
                             <option v-for="(item, index) in airtelData.siteName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
@@ -134,18 +134,18 @@
                     <div class="grid md:grid-cols-3 gap-2 p-3">
                         <select v-model="formData.glo.ServingCellIdentity" class="bg-[#F1F6FD] h-12 p-3 rounded"
                             name="ServingCellId" id="">
-                            <option disabled selected value="">Serving Cell Identity</option>
+                            <option disabled selected value="">serving cell identity</option>
                             <option v-for="(item, index) in gloData.servingCellIdentity" :key="index" :value="item">{{
                                 item
                             }}</option>
                         </select>
                         <select v-model="formData.glo.CellName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="cellname" id="">
-                            <option disabled selected value="">Cell Name</option>
+                            <option disabled selected value="">cell name</option>
                             <option v-for="(item, index) in gloData.cellName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
                         <select v-model="formData.glo.SiteName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="sitename" id="">
-                            <option disabled selected value="">Site Name</option>
+                            <option disabled selected value="">site name</option>
                             <option v-for="(item, index) in gloData.siteName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
@@ -169,20 +169,20 @@
                     <div class="grid md:grid-cols-3 gap-2 p-3">
                         <select v-model="formData.etisalat.ServingCellIdentity" class="bg-[#F1F6FD] h-12 p-3 rounded"
                             name="ServingCellId" id="">
-                            <option disabled selected value="">Serving Cell Identity</option>
+                            <option disabled selected value="">serving cell identity</option>
                             <option v-for="(item, index) in etisalatData.servingCellIdentity" :key="index" :value="item">{{
                                 item
                             }}</option>
                         </select>
                         <select v-model="formData.etisalat.CellName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="cellname"
                             id="">
-                            <option disabled selected value="">Cell Name</option>
+                            <option disabled selected value="">cell name</option>
                             <option v-for="(item, index) in etisalatData.cellName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
                         <select v-model="formData.etisalat.SiteName" class="bg-[#F1F6FD] h-12 p-3 rounded" name="sitename"
                             id="">
-                            <option disabled selected value="">Site Name</option>
+                            <option disabled selected value="">site name</option>
                             <option v-for="(item, index) in etisalatData.siteName" :key="index" :value="item">{{ item }}
                             </option>
                         </select>
