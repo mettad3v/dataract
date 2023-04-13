@@ -218,7 +218,8 @@ import Form from '@/components/Form.vue'
 import PerformanceBlock from '@/components/PerformanceBlock.vue'
 import { ref, watch, watchEffect, inject } from 'vue'
 import { mtn, glo, etisalat, airtel } from '@/data'
-import api from '@/services/AxiosService'
+// import api from '@/services/AxiosService'
+import axios from 'axios'
 import type { TelcoPropObject, TelcoRawObject } from '@/types/TelcoData'
 
 const isLoading: any = inject('isLoading')
@@ -344,7 +345,7 @@ const predict = async () => {
 
     // make requests to all selected telcos simultaneously
     const requests = selectedTelcos.map((telco) => {
-        return api.post('predict_' + telco.name, {
+        return axios.post('https://ncc-channel-utilization-api.herokuapp.com/api/v1/predict_' + telco.name, {
             inputs: [Object.assign({}, formData.value.commons, formData.value[telco.name])]
         })
     })
