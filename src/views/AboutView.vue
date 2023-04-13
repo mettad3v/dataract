@@ -3,7 +3,7 @@
     <div class="md:mx-[10rem]">
       <h1 class="text-lg leading-9 ">Team</h1>
       <p class="mt-4 text-[14px] font-['Soleil'] md:text-lg leading-5 md:leading-7 text-[#828282]">Just we exploring the
-        universe if spectrum
+        universe of spectrum
         utilization
         to improve
         efficiency in mobile
