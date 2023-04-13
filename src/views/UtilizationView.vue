@@ -345,8 +345,18 @@ const predict = async () => {
 
     // make requests to all selected telcos simultaneously
     const requests = selectedTelcos.map((telco) => {
-        return axios.post('https://ncc-channel-utilization-api.herokuapp.com/api/v1/predict_' + telco.name, {
-            inputs: [Object.assign({}, formData.value.commons, formData.value[telco.name])]
+        // return axios.post('https://ncc-channel-utilization-api.herokuapp.com/api/v1/predict_' + telco.name, {
+        //     inputs: [Object.assign({}, formData.value.commons, formData.value[telco.name])]
+        // })
+
+        return fetch('https://ncc-channel-utilization-api.herokuapp.com/api/v1/predict_' + telco.name, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                inputs: [Object.assign({}, formData.value.commons, formData.value[telco.name])]
+            })
         })
     })
 
