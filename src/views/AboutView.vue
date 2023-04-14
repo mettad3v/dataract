@@ -33,8 +33,7 @@
           </p>
         </div>
         <div class="mt-5 md:mt-0">
-          <img class="md:h-[10.3rem] h-[341px] w-full md:w-[10.3rem]" src="@/assets/images/unsplash_WNoLnJo7tS8.png"
-            alt="">
+          <img class="md:h-[10.3rem] h-[341px] rounded-lg w-full md:w-[10.3rem]" src="@/assets/images/emma.jpg" alt="">
           <p class="mt-5 font-['Soleil'] text-lg leading-5">Okonkwo Emmanuel</p>
           <p class="text-[#BDBDBD] font-['Soleil'] ">Frontend Developer</p>
           <p>

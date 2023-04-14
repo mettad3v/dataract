@@ -56,7 +56,7 @@ const toggleNav = () => {
             </svg>
 
 
-        </div>
+    </div>
 
         <div class="hidden  md:block">
             <ul class="list-reset flex items-center ">
@@ -66,9 +66,9 @@ const toggleNav = () => {
                 <li class="mx-7 text-sm text-[#BDBDBD]">
                     <router-link to="/model-utilization">Model Utilization</router-link>
                 </li>
-                <li class="mx-7 text-sm text-[#BDBDBD]">
-                    <router-link to="/upload-article">Upload Article</router-link>
-                </li>
+                <!-- <li class="mx-7 text-sm text-[#BDBDBD]">
+                            <router-link to="/upload-article">Upload Article</router-link>
+                        </li> -->
                 <li class="mx-7 text-sm text-[#BDBDBD]">
                     <router-link to="/about">About Us</router-link>
                 </li>
@@ -76,8 +76,13 @@ const toggleNav = () => {
                     <router-link to="/resources">Resources</router-link>
                 </li>
                 <li class="mx-3">
-                    <button class="rounded btn-primary px-5 py-3 w-40 font-['Soleil'] text-sm text-white">Train ML</button>
-                </li>
+                    <router-link to="/upload-article">
+                        <button class="rounded btn-primary px-5 py-3 w-40 font-['Soleil'] text-sm text-white">
+                            Train ML
+                        </button>
+                    </router-link>
+
+            </li>
             </ul>
         </div>
 
@@ -87,9 +92,9 @@ const toggleNav = () => {
             <li class="my-4 text-sm  text-[#BDBDBD]">
                 <router-link class="leading-[18px]" to="/model-utilization">Model Utilization</router-link>
             </li>
-            <li class="my-4 text-sm  text-[#BDBDBD]">
-                <router-link class="leading-[18px]" to="/upload-article">Upload Article</router-link>
-            </li>
+            <!-- <li class="my-4 text-sm  text-[#BDBDBD]">
+                    <router-link class="leading-[18px]" to="/upload-article">Upload Article</router-link>
+                </li> -->
             <li class="my-4 text-sm  text-[#BDBDBD]">
                 <router-link class="leading-[18px]" to="/about">About Us</router-link>
             </li>
@@ -97,8 +102,11 @@ const toggleNav = () => {
                 <router-link class="leading-[18px]" to="/resources">Resources</router-link>
             </li>
             <li class="my-4">
-                <button class="rounded btn-primary font-bold px-5 py-3 w-40 font-['Soleil'] text-sm text-white">Train
-                    ML</button>
+                <router-link to="/upload-article">
+                    <button class="rounded btn-primary px-5 py-3 w-40 font-['Soleil'] text-sm text-white">
+                        Train ML
+                    </button>
+                </router-link>
             </li>
         </ul>
     </div>
