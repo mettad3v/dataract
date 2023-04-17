@@ -40,7 +40,8 @@
               </linearGradient>
             </defs>
           </svg>
-          <span class="ml-2 text-[#2297EB] leading-5 text-base font-bold">Watch how to use</span>
+          <span class="ml-2 text-[#2297EB] leading-5 text-base font-bold"><a href="https://youtu.be/s8jFD2ms8c8">Watch how
+              to use</a> </span>
         </button>
 
         <div class="w-full block md:hidden h-[400px] bg-cover bg-no-repeat bg-[url('@/assets/images/hero.png')]">
