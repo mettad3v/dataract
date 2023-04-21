@@ -2,14 +2,10 @@
   <section class="md:mx-[5.4rem] mt-10 md:mt-20">
     <div class="md:mx-[10rem]">
       <h1 class="text-lg leading-9 ">Team</h1>
-      <p class="mt-4 text-[14px] font-['Soleil'] md:text-lg leading-5 md:leading-7 text-[#828282]">Just we exploring the
-        universe of spectrum
-        utilization
-        to improve
-        efficiency in mobile
-        usage. we are researchers
-        with keen interest in Data Engineering, Science and Analysis. We want to share our world with you!</p>
-      <!-- </div> -->
+      <p class="mt-4 text-[14px] font-['Soleil'] md:text-lg leading-5 md:leading-7 text-[#828282]">We are researchers with
+        a keen interest in data engineering, science, and analysis. Our goal is to explore the universe of spectrum
+        utilization to improve the efficiency of mobile usage. We are excited to share our world with you!</p>
+
 
       <div class="mt-10 flex flex-col md:flex-row md:gap-16 md:items-start">
         <div>
