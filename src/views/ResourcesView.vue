@@ -33,6 +33,17 @@
 
 
         </div>
+
+
+    </section>
+
+    <section class="flex items-center justify-center mt-20">
+        <div class="flex justify-between items-center">
+            <span class="text-xs font-['Soleil']">Blog powered by </span>
+            <a href="https://www.buttercms.com">
+                <img width="150" height="150" src="@/assets/images/butter-y.png" alt="">
+            </a>
+        </div>
     </section>
 </template>
 
